@@ -27,6 +27,7 @@ import axios from 'axios';
 function App() {
 
     const [picture, setPicture] = React.useState("");
+    const [nextAsteroid, setNextAsteroid] = React.useState("");
 
     React.useEffect(() => {
         axios
@@ -39,9 +40,54 @@ function App() {
             .catch(err => console.log(err));
     }, []);
 
+    React.useEffect(() => {
+        axios
+            .get("https://api.nasa.gov/neo/rest/v1/feed?start_date=2019-01-01&end_date=2019-01-07&api_key=DEMO_KEY")
+            .then(asteroidData => {
+                setNextAsteroid(asteroidData.data.near_earth_objects["2019-01-01"][0].nasa_jpl_url);
+                console.log(asteroidData);
+                console.log(asteroidData.data.near_earth_objects["2019-01-01"][0].nasa_jpl_url);
+            })
+
+            .catch(err => console.log(err));
+    }, []);
+
     return (
     <div className="App">
-        <img src={picture} alt="NASA pic of the day"/>
+
+        <header>
+            <h1>NASA INFO OF THE DAY</h1>
+        </header>
+
+        <main>
+            <p className="tagline"><strong>Nasa Image of the Day</strong>: Check it Out</p>
+            <section className="introduction">
+                <img src={picture} alt="NASA pic of the day"/>
+                <p><a href="https://api.nasa.gov/api.html#apod">NASA's Open APIs</a> provide access to this awesome image of the day.</p>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Nearest Asteroid Information</h3>
+            <div className="asteroid-news">
+                    <p><a href={nextAsteroid}>Here</a> you can learn lots of information about an asteroid that was very close to earth in the first week of January 2019!</p>
+            </div>
+            <a href="#" className="button">View All Posts</a>
+        </aside>
+
+        <footer>
+            <div className="footer-contact-information">
+                <p><a href="#">Gabe is the Best</a></p>
+                <p><a href="#">He is Cool</a></p>
+                <a className="footer-instructor" href="#">Gabe: Number 1 Dude</a>
+                <div className="footer-supplemental">
+                    <a href="#">Follow @lex_node on Twitter</a>
+                </div>
+            </div>
+            <div className="footer-logo">
+                <img src="https://api.nasa.gov/images/logo.png" alt="Nasa Logo"></img>
+            </div>
+        </footer>
         <p>
       </p>
     </div>
