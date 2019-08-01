@@ -32,8 +32,8 @@ function App() {
         axios
             .get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
             .then(pic => {
-                setPicture(pic.data.hdurl)
-                console.log(pic.data.hdurl);
+                setPicture(pic.data.url)
+                console.log(pic);
             })
 
             .catch(err => console.log(err));
