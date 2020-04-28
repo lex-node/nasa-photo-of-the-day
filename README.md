@@ -14,7 +14,7 @@ Commit your code regularly and meaningfully. This helps both you and your team l
 
 ## Description
 
-In this project you will build out a application to show the nasa photo of the day.
+In this project you will build out an application to show the nasa photo of the day.
 
 ## Project Set Up
 
@@ -22,14 +22,14 @@ In this project you will build out a application to show the nasa photo of the d
 
 This project was put together using create-react-app (CRA). You will not need to install CRA in order to make this project work. Follow the steps below to setup the project with the proper dependencies.
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal
-- [ ] Download project dependencies by running `npm install`
-- [ ] Start up the app using `npm start`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add your team lead as collaborator on Github.
+- [X] Clone your OWN version of the repository in your terminal
+- [X] Download project dependencies by running `npm install`
+- [X] Start up the app using `npm start`
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
       Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
@@ -61,13 +61,12 @@ Follow these steps for completing your project.
 
 **Step 3 - Fetching the Data**
 
-- [ ] In `App.js` (or where ever you wanted to fetch the data) add state for the data you'll be getting from NASA.
-- [ ] Add an effect hook to handle the API call side effect.
-- [ ] Go to the [NASA APOD API docs](https://api.nasa.gov/#apod) and read through the docs to see how to make the API call.
-- [ ] You don't _need_ an API key. However you may need one if you exceed the API request limits.
-- [ ] Using the endpoint given, fetch the data using `axios`.
-- [ ] In your `.then()` make sure to `console.log` the response so you can look at the shape of the data. 😃
-- [ ] Before you add your data to state, make sure your effect hook has a dependency array (probably empty, since we don't want this effect synced up to any state/props), otherwise you will start an **infinite loop, and you will exceed the API rate limits of the DEMO_KEY and need to use a real API_KEY.**
+- [X] In `App.js` (or where ever you wanted to fetch the data) add state for the data you'll be getting from NASA.
+- [X] Add an effect hook to handle the API call side effect.
+- [X] Go to the [NASA APOD API docs](https://api.nasa.gov/#apod) and read through the docs to see how to make the API call.
+- [X] Using the endpoint given, fetch the data using `axios`.
+- [X] In your `.then()` make sure to `console.log` the response so you can look at the shape of the data. 😃
+- [X] Before you add your data to state, make sure your effect hook has a dependency array (probably empty, since we don't want this effect synced up to any state/props), otherwise you will start an **infinite loop, and you will exceed the API rate limits of the DEMO_KEY and need to use a real API_KEY.**
 
 DEMO KEY rate limits:
 
