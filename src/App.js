@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import axios from 'axios';
 import "./App.css";
 import ImageDisplayer from "./ImageDisplayer";
+import InfoDisplayer from "./InfoDisplayer";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     return (
         <div className="App">
             <h1>NASA Transporter</h1>
+            <InfoDisplayer spaceData={spaceData}/>
             <ImageDisplayer spaceData={spaceData}/>
         </div>
     );
