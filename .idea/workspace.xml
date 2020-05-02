@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68a06c6f-e7b9-413e-9069-ec9eb5a7d1a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InfoDisplayer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/nasa-photo-of-the-day.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DropDown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spaceText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAY_TWO_README.md" beforeDir="false" afterPath="$PROJECT_DIR$/DAY_TWO_README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ImageDisplayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImageDisplayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InfoDisplayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/InfoDisplayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../aminals" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -64,7 +74,8 @@
       <workItem from="1564969862431" duration="2892000" />
       <workItem from="1564976706999" duration="2000" />
       <workItem from="1588032040884" duration="10201000" />
-      <workItem from="1588223337668" duration="337000" />
+      <workItem from="1588223337668" duration="5158000" />
+      <workItem from="1588434186979" duration="8206000" />
     </task>
     <task id="LOCAL-00001" summary="configures state/API hooks &amp; basic display">
       <created>1588081654375</created>
@@ -80,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588082835984</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="moves img logic and photo name/date logic into separate components">
+      <created>1588223713683</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588223713683</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,7 +107,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="configures state/API hooks &amp; basic display" />
     <MESSAGE value="moves display logic into ImageDisplayer component" />
-    <option name="LAST_COMMIT_MESSAGE" value="moves display logic into ImageDisplayer component" />
+    <MESSAGE value="moves img logic and photo name/date logic into separate components" />
+    <option name="LAST_COMMIT_MESSAGE" value="moves img logic and photo name/date logic into separate components" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -97,10 +116,10 @@
       <screen x="67" y="27" width="1845" height="934" />
     </state>
     <state x="229" y="285" width="587" height="416" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1845.934@67.27.1845.934" timestamp="1588133937922" />
-    <state x="67" y="27" width="912" height="934" key="CommitChangelistDialog2" timestamp="1588082835905">
+    <state x="67" y="27" width="912" height="934" key="CommitChangelistDialog2" timestamp="1588223713517">
       <screen x="67" y="27" width="1845" height="934" />
     </state>
-    <state x="67" y="27" width="912" height="934" key="CommitChangelistDialog2/67.27.1845.934@67.27.1845.934" timestamp="1588082835905" />
+    <state x="67" y="27" width="912" height="934" key="CommitChangelistDialog2/67.27.1845.934@67.27.1845.934" timestamp="1588223713517" />
     <state x="374" y="254" width="374" height="480" key="FileChooserDialogImpl" timestamp="1588216863715">
       <screen x="67" y="27" width="1845" height="934" />
     </state>
